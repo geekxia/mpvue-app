@@ -1,5 +1,13 @@
 <script>
 export default {
+  onLaunch () {
+    mpvue.login({
+      success: (res) => {
+        console.log('login', res)
+        // mpvue.request()
+      }
+    })
+  },
   created () {
     // 调用API从本地缓存中获取数据
     /*
